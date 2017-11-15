@@ -1,2 +1,3 @@
-# CoalHMM
-Chapter 9: CoalHMM
+# Chapter 9: Ancestral population genomics with Jocx, a coalescent hidden Markov model
+
+Coalescence theory lets us probe the past demographics of present day genetic samples and much information about the past can be gleaned from variation in rates of coalescence event as we trace genetic lineages back in time. Fewer and fewer lineages will remain, however, so there is a limit to how far back we explore. Without recombination, we would not be able to explore ancient speciation events because of this---any meaningful species concept would require that individuals of one species are closer related than they are to individuals of another species, once speciation is complete. Recombination, however, opens a window to the deeper past. By scanning along a genomic alignment, we get a sequential variant of the coalescence process as it looked at the time of the speciation; a genetic signal that will never be lost to time. So-called coalescence hidden Markov models allow us to exploit this, and in this chapter we present the too Jocx that uses a framework of these models to infer demographic parameters in ancient speciation events.
