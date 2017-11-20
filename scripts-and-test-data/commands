@@ -1,0 +1,8 @@
+./fsc251 -i input.par -n 1 > /dev/null
+./arlequin2fasta.py input/input_1_1.arp 8000000
+./Jocx.py init . iso ./input_1_1-sample_1-1_1.fasta ./input_1_1-sample_2-2_1.fasta
+./Jocx.py run . iso pso 0.0001 1000 0.1 > 0.stdout
+./Jocx.py run . iso pso 0.0001 1000 0.1 > 1.stdout
+./Jocx.py run . iso pso 0.0001 1000 0.1 > 2.stdout
+grep '50   1' *.stdout > summary.txt
+./box-plot-simple.py summary.txt 3 summary.png
